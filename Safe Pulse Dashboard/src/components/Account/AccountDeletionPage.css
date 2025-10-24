@@ -1,0 +1,292 @@
+/* AccountDeletionPage.css */
+
+.privacy-themed-deletion-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.deletion-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 1rem;
+}
+
+.deletion-header h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+.privacy-notice-card,
+.deletion-warning-card,
+.alternative-options-card,
+.gdpr-notice {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3498db;
+}
+
+.deletion-warning-card {
+  border-left-color: #e74c3c;
+}
+
+.deletion-warning-card .warning-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.warning-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.deletion-warning-card h3 {
+  color: #e74c3c;
+  margin: 0;
+}
+
+.privacy-notice-card h3 {
+  color: #3498db;
+  margin-top: 0;
+}
+
+.alternative-options-card h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.deletion-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.deletion-form h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.confirmation-section {
+  margin: 2rem 0;
+}
+
+.confirmation-checkbox {
+  display: flex;
+  align-items: flex-start;
+}
+
+.confirmation-checkbox input {
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.confirmation-checkbox label {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #2c3e50;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.delete-button:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+.delete-button:disabled {
+  background-color: #e0a7a1;
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: none;
+}
+
+.cancel-button:hover {
+  background-color: #bdc3c7;
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fdecea;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  border-left: 4px solid #e74c3c;
+}
+
+.details-toggle {
+  background: none;
+  border: none;
+  color: #3498db;
+  padding: 0;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.technical-details {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  border-left: 3px solid #95a5a6;
+}
+
+.technical-details h4 {
+  margin-top: 0;
+}
+
+.deletion-success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.deletion-success-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #2ecc71;
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.deletion-success-card h2 {
+  color: #2ecc71;
+  margin-top: 0;
+}
+
+.deletion-summary {
+  text-align: left;
+  margin: 1.5rem 0;
+  background-color: #475d75;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.deletion-summary h4 {
+  margin-top: 0;
+}
+
+.redirect-notice {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .privacy-themed-deletion-page {
+    padding: 0 1rem;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  button {
+    width: 100%;
+  }
+}
